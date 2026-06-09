@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UNICON Operation Platform</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+background:rgba(5,5,5,0.95);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #222;
+}
+
+.nav-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+letter-spacing:4px;
+}
+
+.logo span{
+color:#f0c419;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:14px;
+opacity:.8;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+url("1000055656.png");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:800px;
+}
+
+.hero h1{
+font-size:72px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+color:#ddd;
+margin-bottom:40px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:16px 30px;
+background:#f0c419;
+color:black;
+font-weight:700;
+text-decoration:none;
+margin-right:15px;
+border-radius:4px;
+}
+
+.btn-secondary{
+background:transparent;
+color:#f0c419;
+border:1px solid #f0c419;
+}
+
+section{
+padding:120px 0;
+}
+
+.section-title{
+font-size:48px;
+margin-bottom:30px;
+}
+
+.section-subtitle{
+font-size:20px;
+color:#aaa;
+max-width:900px;
+margin-bottom:60px;
+line-height:1.8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#101010;
+border:1px solid #222;
+padding:30px;
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+border-color:#f0c419;
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#f0c419;
+}
+
+.ecosystem{
+background:#0c0c0c;
+}
+
+.integrations{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.integration{
+background:#111;
+padding:18px;
+border:1px solid #222;
+border-radius:8px;
+}
+
+.roadmap{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.phase{
+background:#111;
+padding:30px;
+border-left:4px solid #f0c419;
+}
+
+footer{
+padding:60px 0;
+border-top:1px solid #222;
+text-align:center;
+color:#888;
+}
+
+.highlight{
+color:#f0c419;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container nav-inner">
+<div class="logo">UNI<span>CON</span></div>
+
+<div class="menu">
+<a href="#about">Platform</a>
+<a href="#features">Technology</a>
+<a href="#ecosystem">Integration</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>THE MISSING LAYER BETWEEN THE OFFICE AND THE JOBSITE</h1>
+
+<p>
+Connect people, plans, measurements and field operations in one intelligent workspace.
+</p>
+
+<a href="#contact" class="btn">Request Demo</a>
+
+<a href="#about" class="btn btn-secondary">Learn More</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">Construction Operations Platform</h2>
+
+<p class="section-subtitle">
+UNICON connects field teams, site measurements, project information and operational workflows into a single environment.
+Built for construction, inspection and industrial operations.
+</p>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<div class="container">
+
+<h2 class="section-title">Core Capabilities</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Smart HUD</h3>
+<p>Real-time information directly in the operator's field of view.</p>
+</div>
+
+<div class="card">
+<h3>Digital Measurements</h3>
+<p>Distance, angle, level and spatial measurements.</p>
+</div>
+
+<div class="card">
+<h3>AI Assistant</h3>
+<p>Context-aware support for field operations.</p>
+</div>
+
+<div class="card">
+<h3>Task Management</h3>
+<p>Connect office planning with on-site execution.</p>
+</div>
+
+<div class="card">
+<h3>Site Intelligence</h3>
+<p>Transform observations into actionable information.</p>
+</div>
+
+<div class="card">
+<h3>Future Spatial Computing</h3>
+<p>Next generation construction workflows.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="ecosystem" class="ecosystem">
+
+<div class="container">
+
+<h2 class="section-title">Open Ecosystem</h2>
+
+<p class="section-subtitle">
+Keep your software. Add spatial intelligence.
+</p>
+
+<div class="integrations">
+
+<div class="integration">Autodesk Construction Cloud</div>
+<div class="integration">BIM 360</div>
+<div class="integration">Procore</div>
+<div class="integration">Bluebeam</div>
+<div class="integration">Fieldwire</div>
+<div class="integration">Microsoft 365</div>
+<div class="integration">SharePoint</div>
+<div class="integration">Excel</div>
+<div class="integration">PDF Drawings</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Industries</h2>
+
+<div class="grid">
+
+<div class="card"><h3>Construction</h3></div>
+<div class="card"><h3>Surveying</h3></div>
+<div class="card"><h3>Utilities</h3></div>
+<div class="card"><h3>Industrial Maintenance</h3></div>
+<div class="card"><h3>Marine Projects</h3></div>
+<div class="card"><h3>Facility Management</h3></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="roadmap">
+
+<div class="container">
+
+<h2 class="section-title">Roadmap</h2>
+
+<div class="roadmap">
+
+<div class="phase">
+<h3 class="highlight">V0</h3>
+<p>Research & Development Prototype</p>
+</div>
+
+<div class="phase">
+<h3 class="highlight">V1</h3>
+<p>Construction Operations Platform</p>
+</div>
+
+<div class="phase">
+<h3 class="highlight">V2</h3>
+<p>Advanced Integration Layer</p>
+</div>
+
+<div class="phase">
+<h3 class="highlight">V3</h3>
+<p>Spatial Intelligence Ecosystem</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<p class="section-subtitle">
+
+Developed by NOSMO Technology Limited
+
+<br><br>
+
+Partnership Enquiries
+
+<br>
+
+Request Demonstrations
+
+<br>
+
+Business Development
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+UNICON Operation Platform © NOSMO Technology Limited
+
+</footer>
+
+</body>
+</html>
