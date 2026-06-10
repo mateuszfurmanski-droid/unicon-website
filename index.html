@@ -41,8 +41,8 @@ body::before{
 content:"";
 position:fixed;
 inset:0;
-background:url("1000055656.png") center center / min(850px,85vw) auto no-repeat;
-opacity:.055;
+background:url("1000055656.png") center center / min(1200px,95vw) auto no-repeat;
+opacity:.14;
 z-index:-2;
 pointer-events:none;
 }
@@ -78,7 +78,7 @@ border-bottom:1px solid var(--line);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 0;
+padding:16px 0;
 }
 
 .logo{
@@ -87,7 +87,7 @@ align-items:center;
 }
 
 .logo img{
-width:180px;
+width:150px;
 height:auto;
 object-fit:contain;
 display:block;
@@ -116,7 +116,8 @@ min-height:100vh;
 display:flex;
 align-items:center;
 position:relative;
-padding-top:80px;
+padding-top:155px;
+padding-bottom:70px;
 }
 
 .hero::before{
@@ -143,9 +144,9 @@ margin-bottom:18px;
 }
 
 .hero h1{
-font-size:clamp(44px,7vw,88px);
+font-size:clamp(42px,6.4vw,82px);
 font-weight:900;
-line-height:1.02;
+line-height:1.08;
 margin-bottom:24px;
 letter-spacing:-2px;
 }
@@ -363,6 +364,14 @@ border-radius:18px;
 padding:42px;
 }
 
+.contact-lines{
+margin-top:22px;
+margin-bottom:32px;
+color:#ddd;
+line-height:1.9;
+font-size:18px;
+}
+
 footer{
 padding:60px 0;
 border-top:1px solid #222;
@@ -391,17 +400,19 @@ letter-spacing:3px;
 }
 
 .logo img{
-width:34px;
-height:34px;
+width:118px;
+height:auto;
 }
 
 .hero{
-padding-top:90px;
+padding-top:125px;
 min-height:92vh;
 }
 
 .hero h1{
-font-size:42px;
+font-size:40px;
+line-height:1.12;
+letter-spacing:-1px;
 }
 
 .hero p{
@@ -422,6 +433,11 @@ margin-bottom:12px;
 
 section{
 padding:78px 0;
+}
+
+body::before{
+background:url("1000055656.png") center center / 105vw auto no-repeat;
+opacity:.12;
 }
 }
 </style>
@@ -660,8 +676,14 @@ Developed by NOSMO Technology Limited.
 For partnership enquiries, demonstrations and technical collaboration, contact the UNICON team.
 </p>
 
-<a href="mailto:contact@nosmotechnology.com" class="btn">Request Demo</a>
-<a href="mailto:contact@nosmotechnology.com" class="btn btn-secondary">Partnership Enquiry</a>
+<div class="contact-lines">
+<strong>Email:</strong> contact@uniconplatform.co.uk<br>
+<strong>Company:</strong> NOSMO Technology Limited<br>
+<strong>Location:</strong> Huddersfield, United Kingdom
+</div>
+
+<a href="mailto:contact@uniconplatform.co.uk" class="btn">Request Demo</a>
+<a href="mailto:contact@uniconplatform.co.uk" class="btn btn-secondary">Partnership Enquiry</a>
 </div>
 </div>
 </section>
